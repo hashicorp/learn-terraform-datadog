@@ -53,9 +53,10 @@ resource "kubernetes_service" "beacon" {
       app = kubernetes_deployment.beacon.metadata[0].labels.app
     }
     port {
+      node_port   = 30201
       port        = 8080
       target_port = 80
     }
-    type = "LoadBalancer"
+    type = "NodePort"
   }
 }
