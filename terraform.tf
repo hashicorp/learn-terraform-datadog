@@ -2,15 +2,15 @@ terraform {
   required_providers {
     datadog = {
       source  = "datadog/datadog"
-      version = "~> 2.12"
+      version = "~> 2.16.0"
     }
     helm = {
       source  = "hashicorp/helm"
-      version = "~> 1.2"
+      version = "~> 1.3.2"
     }
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "~> 1.11"
+      version = "~> 1.13.3"
     }
   }
 
