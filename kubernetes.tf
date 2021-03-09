@@ -1,5 +1,6 @@
 provider "kubernetes" {
-  load_config_file = true
+  config_path    = "~/.kube/config"
+  config_context = "minikube"
 }
 
 resource "kubernetes_namespace" "beacon" {
